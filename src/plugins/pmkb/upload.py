@@ -1,4 +1,4 @@
-"""A module for MetaKB uploader"""
+"""A module for MetaKB PMKB uploader"""
 import biothings, config  # noqa: E401
 biothings.config_for_app(config)
 
@@ -17,7 +17,7 @@ from .parser import load_documents as docs_parser  # noqa: E402
 class StatementsUploader(biothings.hub.dataload.uploader.BaseSourceUploader):
     """StatementsUploader"""
 
-    main_source = "metakb"
+    main_source = "metakb_pmkb"
     name = "statements"
     __metadata__ = {"src_meta": {}}
     idconverter = None
@@ -37,7 +37,7 @@ class StatementsUploader(biothings.hub.dataload.uploader.BaseSourceUploader):
 class PropositionsUploader(biothings.hub.dataload.uploader.BaseSourceUploader):
     """PropositionsUploader"""
 
-    main_source = "metakb"
+    main_source = "metakb_pmkb"
     name = "propositions"
     __metadata__ = {"src_meta": {}}
     idconverter = None
@@ -57,7 +57,7 @@ class PropositionsUploader(biothings.hub.dataload.uploader.BaseSourceUploader):
 class VariationDescriptorsUploader(biothings.hub.dataload.uploader.BaseSourceUploader):  # noqa: E501
     """VariationDescriptorsUploader"""
 
-    main_source = "metakb"
+    main_source = "metakb_pmkb"
     name = "variant_descriptors"
     __metadata__ = {"src_meta": {}}
     idconverter = None
@@ -77,7 +77,7 @@ class VariationDescriptorsUploader(biothings.hub.dataload.uploader.BaseSourceUpl
 class GeneDescriptorsUploader(biothings.hub.dataload.uploader.BaseSourceUploader):  # noqa: E501
     """GeneDescriptorsUploader"""
 
-    main_source = "metakb"
+    main_source = "metakb_pmkb"
     name = "gene_descriptors"
     __metadata__ = {"src_meta": {}}
     idconverter = None
@@ -97,7 +97,7 @@ class GeneDescriptorsUploader(biothings.hub.dataload.uploader.BaseSourceUploader
 class TherapyDescriptorsUploader(biothings.hub.dataload.uploader.BaseSourceUploader):  # noqa: E501
     """TherapyDescriptorsUploader"""
 
-    main_source = "metakb"
+    main_source = "metakb_pmkb"
     name = "therapy_descriptors"
     __metadata__ = {"src_meta": {}}
     idconverter = None
@@ -117,7 +117,7 @@ class TherapyDescriptorsUploader(biothings.hub.dataload.uploader.BaseSourceUploa
 class DiseaseDescriptorsUploader(biothings.hub.dataload.uploader.BaseSourceUploader):  # noqa: E501
     """DiseaseDescriptorsUploader"""
 
-    main_source = "metakb"
+    main_source = "metakb_pmkb"
     name = "disease_descriptors"
     __metadata__ = {"src_meta": {}}
     idconverter = None
@@ -137,7 +137,7 @@ class DiseaseDescriptorsUploader(biothings.hub.dataload.uploader.BaseSourceUploa
 class MethodsUploader(biothings.hub.dataload.uploader.BaseSourceUploader):
     """MethodsUploader"""
 
-    main_source = "metakb"
+    main_source = "metakb_pmkb"
     name = "methods"
     __metadata__ = {"src_meta": {}}
     idconverter = None
@@ -157,7 +157,7 @@ class MethodsUploader(biothings.hub.dataload.uploader.BaseSourceUploader):
 class DocumentsUploader(biothings.hub.dataload.uploader.BaseSourceUploader):
     """DocumentsUploader"""
 
-    main_source = "metakb"
+    main_source = "metakb_pmkb"
     name = "documents"
     __metadata__ = {"src_meta": {}}
     idconverter = None

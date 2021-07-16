@@ -1,4 +1,4 @@
-"""A module for MetaKB dumper"""
+"""A module for MetaKB MOA dumper"""
 import os
 
 import biothings, config  # noqa: E401
@@ -10,10 +10,10 @@ from biothings.utils.common import uncompressall  # noqa: E402
 import biothings.hub.dataload.dumper  # noqa: E402
 
 
-class MetakbDumper(biothings.hub.dataload.dumper.LastModifiedHTTPDumper):
+class MetakbMOADumper(biothings.hub.dataload.dumper.LastModifiedHTTPDumper):
     """Dumper for MOA"""
 
-    SRC_NAME = "metakb"
+    SRC_NAME = "metakb_moa"
     SRC_ROOT_FOLDER = os.path.join(DATA_ARCHIVE_ROOT, SRC_NAME)
     SCHEDULE = None
     UNCOMPRESS = False
