@@ -169,9 +169,9 @@ VERSION_URLS = []
 # default hub logger
 from biothings.utils.loggers import setup_default_log
 import logging
-logger = ConfigurationDefault(
-        default=logging,
-        desc="Provide a default hub logger instance (use setup_default_log(name,log_folder)")
+logger = ConfigurationError("Provider a default hub logger instance (use setup_default_log(name,log_folder)")
+# Usually use default setup
+#logger = setup_default_log("hub", LOG_FOLDER)
 
 #logging.getLogger("urllib3").setLevel(logging.ERROR)
 #logging.getLogger("requests").setLevel(logging.ERROR)

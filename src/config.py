@@ -15,14 +15,16 @@ DATA_TARGET_SERVER_PASSWORD = None
 
 HUB_DB_BACKEND = {
         "module" : "biothings.utils.es",
-        "uri" : "localhost:9200",
+        "uri" : "localhost:9200"
         }
 
 ES_HOST = "localhost:9200"
 
 DATA_ARCHIVE_ROOT = "/tmp/archive"
-DATA_PLUGIN_FOLDER = "/data/biothings_studio/plugins/biothings-metakb"
+DATA_PLUGIN_FOLDER = "./plugins"
 DATA_UPLOAD_FOLDER = "/data/biothings_studio/dataupload/biothings-metakb"
 DIFF_PATH = os.path.join(DATA_ARCHIVE_ROOT, "diff")
 RELEASE_PATH = os.path.join(DATA_ARCHIVE_ROOT, "reliease")
 LOG_FOLDER = os.path.join(DATA_ARCHIVE_ROOT, "logs")
+from biothings.utils.loggers import setup_default_log
+logger = setup_default_log("hub", LOG_FOLDER)
