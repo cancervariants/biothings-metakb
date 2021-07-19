@@ -158,6 +158,3 @@ def load_file(data_folder):
         data = json.load(f)
 
     return data
-
-# file = "/Users/jiachenliu/Documents/GitHub/metakb/data/moa/transform"
-# a = load_documents(file)

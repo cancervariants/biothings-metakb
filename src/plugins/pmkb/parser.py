@@ -151,8 +151,8 @@ def load_documents(data_folder):
 
 
 def load_file(data_folder):
-    """Load MOA CDM file"""
-    infile = os.path.join(data_folder, "moa_cdmtest.json")
+    """Load PMKB CDM file"""
+    infile = os.path.join(data_folder, "pmkb_cdmtest.json")
     assert os.path.exists(infile)
     with open(infile, "r") as f:
         data = json.load(f)
