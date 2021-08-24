@@ -16,8 +16,8 @@ class MetakbMOADumper(biothings.hub.dataload.dumper.LastModifiedHTTPDumper):
     SRC_NAME = "metakb_moa"
     SRC_ROOT_FOLDER = os.path.join(DATA_ARCHIVE_ROOT, SRC_NAME)
     SCHEDULE = None
-    UNCOMPRESS = False
-    SRC_URLS = ['https://metakb-biothings.s3.amazonaws.com/moa_cdmtest.json']
+    UNCOMPRESS = True
+    SRC_URLS = ['https://vicc-metakb.s3.us-east-2.amazonaws.com/cdm/moa_cdm.json.zip']
     __metadata__ = {"src_meta": {}}
 
     def post_dump(self, *args, **kwargs):
