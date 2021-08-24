@@ -1,6 +1,6 @@
 """Main Hub executable"""
 import os
-import config
+from src import config
 import biothings
 from biothings.utils.version import set_versions
 

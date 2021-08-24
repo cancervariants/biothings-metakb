@@ -1,5 +1,5 @@
 import os
-from config_hub import *
+from src.config_hub import *
 
 DATA_SRC_SERVER = "localhost"
 DATA_SRC_PORT = 9200
@@ -15,7 +15,7 @@ DATA_TARGET_SERVER_PASSWORD = None
 
 HUB_DB_BACKEND = {
         "module" : "biothings.utils.es",
-        "uri" : "localhost:9200"
+        "host" : "localhost:9200"
         }
 
 ES_HOST = "localhost:9200"
