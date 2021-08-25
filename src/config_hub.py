@@ -3,7 +3,7 @@
 #############
 import os
 
-from biothings import ConfigurationError
+from biothings.utils.configuration import ConfigurationError
 
 DATA_HUB_DB_DATABASE = "biothings_metakb_hubdb"                   # db containing the following (internal use)
 DATA_SRC_MASTER_COLLECTION = 'src_master'             # for metadata of each src collections
